@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sadapp"
+    >
+
+
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"
+        android:fullBackupContent="true">
+
+        <!-- Add new activities here //Mina -->
+        <activity
+            android:name=".AdminActivity"
+            android:label="AdminDashBoard">
+        </activity>
+        <activity android:name=".AddActivity"/>
+        <activity android:name=".WarehouseActivity"/>
+        <activity android:name=".UpdateActivity"/>
+        <activity
+            android:name=".AdminTableActivity"
+            android:label="AdminDashBoard">
+        </activity>
+        <activity
+            android:name=".BillTableActivity"
+            android:label="Edit Bills">
+        </activity>
+        <activity
+            android:name=".CashierTableActivity"
+            android:label="Edit Cashier Table">
+        </activity>
+        <activity
+            android:name=".ItemTableActivity"
+            android:label="Edit Cashier Table">
+        </activity>
+        <activity
+            android:name=".WarehouseTableActivity"
+            android:label="Edit Cashier Table">
+        </activity>
+        <activity
+            android:name=".CashierActivity"
+            android:label="CashierPage">
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"
+            />
+    </application>
+
+</manifest>

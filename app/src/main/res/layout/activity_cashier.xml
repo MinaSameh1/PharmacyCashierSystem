@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashierActivity"
+    android:background="@drawable/pharmback1"
+    >
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/RecyclerViewCashier"
+       android:layout_width="match_parent"
+       android:layout_height="445dp" />
+
+   <TextView
+       android:id="@+id/CashierTextView"
+       android:layout_below="@+id/RecyclerViewCashier"
+       android:text="@string/total"
+       android:gravity="bottom"
+       android:layout_height="40dp"
+       android:layout_marginStart="10dp"
+       android:layout_width="wrap_content"
+       />
+
+   <EditText
+       android:id="@+id/EditTextCashierTotal"
+       android:layout_below="@+id/RecyclerViewCashier"
+       android:layout_toEndOf="@+id/CashierTextView"
+       android:layout_width="200dp"
+       android:layout_height="45dp"
+       android:layout_marginTop="4dp"
+       android:layout_marginStart="90dp"
+       android:inputType="numberDecimal"
+       android:importantForAutofill="no" />
+   <TextView
+       android:id="@+id/CashierTextView2"
+       android:layout_width="wrap_content"
+       android:layout_height="46dp"
+       android:text="@string/customer_paid"
+       android:gravity="bottom"
+       android:layout_marginStart="10dp"
+       android:layout_below="@id/CashierTextView"
+       />
+
+   <EditText
+       android:id="@+id/EditTextCashierCustomerPaid"
+       android:layout_width="200dp"
+       android:layout_height="45dp"
+       android:layout_below="@+id/EditTextCashierTotal"
+       android:layout_toEndOf="@+id/CashierTextView2"
+       android:layout_marginStart="29dp"
+       android:inputType="numberDecimal"
+       android:importantForAutofill="no"
+       />
+
+   <TextView
+       android:id="@+id/CashierTextView3"
+       android:layout_width="wrap_content"
+       android:layout_height="38dp"
+       android:text="@string/change"
+       android:layout_below="@+id/CashierTextView2"
+       android:gravity="bottom"
+       android:layout_marginStart="10dp"
+       />
+
+   <TextView
+       android:id="@+id/CashierTextChange"
+       android:layout_below="@+id/EditTextCashierCustomerPaid"
+       android:layout_toEndOf="@+id/CashierTextView3"
+       android:layout_marginStart="77dp"
+       android:gravity="center"
+       android:layout_width="200dp"
+       android:text="@string/change"
+       android:layout_height="45dp"
+       />
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/CashierTextChange"
+       android:layout_marginTop="-3dp">
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/floatingActionButtonDeleteItem"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:clickable="true"
+          android:contentDescription="@string/todo5"
+          android:focusable="true"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.761"
+          tools:srcCompat="@android:drawable/ic_delete" />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/floatingActionButtonAddItem"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="40dp"
+          android:clickable="true"
+          android:contentDescription="@string/todo3"
+          android:focusable="true"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.761"
+          tools:srcCompat="@android:drawable/ic_input_add"
+          tools:targetApi="m" />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/floatingActionButtonPrintBill"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="88dp"
+          android:clickable="true"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.112"
+          app:layout_constraintStart_toStartOf="parent"
+          app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

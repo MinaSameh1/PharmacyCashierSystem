@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/LinearLayoutItems"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <RelativeLayout
+            android:background="@drawable/pharmtile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewAdminID"
+                android:gravity="center"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balthazar"
+                android:text="AdminID: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewAdminName"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAdminID"
+                android:fontFamily="@font/balthazar"
+                android:text="Admin Name: "
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textViewAdminPassword"
+                android:gravity="center"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAdminName"
+                android:fontFamily="@font/balthazar"
+                android:text="Admin Password: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewAdminAddress"
+                android:gravity="center"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAdminPassword"
+                android:fontFamily="@font/balthazar"
+                android:text="Admin Address:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewAdminTelephone"
+                android:gravity="center"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAdminAddress"
+                android:fontFamily="@font/balthazar"
+                android:text="Admin Telephone: "
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

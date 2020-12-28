@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewBillsTableBillID"
+                android:text="BillID:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewBillsTableCashierID"
+                android:text="CashierID:"
+                android:layout_below="@+id/textViewBillsTableBillID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewBillsTableItemsSold"
+                android:text="Items Sold:"
+                android:layout_below="@+id/textViewBillsTableCashierID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewBillsTableNumberOfItems"
+                android:text="NumberOfItems:"
+                android:layout_below="@+id/textViewBillsTableItemsSold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewBillsTableTotal"
+                android:text="Total"
+                android:layout_below="@+id/textViewBillsTableNumberOfItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewBillsTableAmountPaid"
+                android:text="Amount Customer Paid;"
+                android:layout_below="@+id/textViewBillsTableTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewBillsTableChange"
+                android:text="Change"
+                android:layout_below="@+id/textViewBillsTableAmountPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

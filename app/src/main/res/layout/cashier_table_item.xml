@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:background="@drawable/pharmtile"
+            android:layout_width="412dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textviewCashierTableID"
+                android:text="CashierID:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/textViewCashierTableName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cashier Name:"
+                android:layout_below="@+id/textviewCashierTableID"
+                />
+            <TextView
+                android:id="@+id/textViewCashierTablePassword"
+                android:text="CashierPass:"
+                android:layout_below="@+id/textViewCashierTableName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/textViewCashierTableAddress"
+                android:text="Cashier Address:"
+                android:layout_below="@+id/textViewCashierTablePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/textViewCashierTableTelephone"
+                android:text="Cashier Telephone:"
+                android:layout_below="@+id/textViewCashierTableAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/textViewCashierTableNumberOfOrders"
+                android:text="Number Of Orders:"
+                android:layout_below="@+id/textViewCashierTableTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

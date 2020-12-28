@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/pharmback1" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashierTableActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCashierTable"
+        android:layout_width="410dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="98dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/balthazar"
+        android:text="@string/cashier_id"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTableItemID"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCashierTableCashierID"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTableItemID"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/balthazar"
+        android:text="@string/cashier_password"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCashierTablePassword"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/balthazar"
+        android:text="@string/cashier_address"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCashierTableAddress"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/balthazar"
+        android:text="@string/cashier_telephone"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCashierTableTelephone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="104dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/balthazar"
+        android:text="@string/cashier_num_of_orders"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButtonCashierTableDel"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCashierTableNumberOfOrders"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCashierTableCashierID"
+        android:layout_width="204dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/balthazar"
+        android:text="@string/textview"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewCashierTable" />
+
+    <EditText
+        android:id="@+id/editTextCashierTablePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:inputType="textPassword"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCashierTableAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCashierTableCashierID" />
+
+    <EditText
+        android:id="@+id/editTextCashierTableAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:inputType="textPersonName"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCashierTableTelephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCashierTablePassword"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextCashierTableTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:inputType="textPersonName"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCashierTableNumberOfOrders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCashierTableAddress"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextCashierTableNumberOfOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:inputType="number"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButtonCashierTableDo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCashierTableTelephone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonCashierTableDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo5"
+        android:focusable="true"
+        android:foreground="@drawable/pharmcrossicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pharmcrossicon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonCashierTableDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo3"
+        android:focusable="true"
+        android:foreground="@drawable/pharmrighticon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCashierTableNumberOfOrders"
+        app:srcCompat="@drawable/pharmrighticon"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/balthazar"
+        android:text="Cashier Name:"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTableItemID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextCashierTableName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:inputType="textPersonName"
+        android:textColor="#04BAD8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCashierTablePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCashierTableCashierID"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

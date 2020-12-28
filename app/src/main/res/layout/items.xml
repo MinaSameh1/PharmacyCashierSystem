@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/LinearLayoutItems"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+    <RelativeLayout
+        android:background="@drawable/pharmtile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewItemID"
+            android:gravity="center"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/balthazar"
+            android:text="ItemID: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textViewItemName"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewItemID"
+            android:fontFamily="@font/balthazar"
+            android:text="Item Name: "
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewItemCost"
+            android:gravity="center"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewItemName"
+            android:fontFamily="@font/balthazar"
+            android:text="Item Cost: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewItemInStock"
+            android:gravity="center"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewItemCost"
+            android:fontFamily="@font/balthazar"
+            android:text="In Stock: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewItemSold"
+            android:gravity="center"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewItemInStock"
+            android:fontFamily="@font/balthazar"
+            android:text="Sold: "
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

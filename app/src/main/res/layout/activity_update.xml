@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/name_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Item Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp"/>
+
+
+    <EditText
+        android:id="@+id/cost_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Item Cost"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/name_input2"
+        app:layout_constraintTop_toBottomOf="@+id/name_input2"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/quantity_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="The Quantity Of The Item"
+        android:inputType="number"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/cost_input2"
+        app:layout_constraintTop_toBottomOf="@+id/cost_input2"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/update_button"
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Update"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/quantity_input2"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_input2" />
+
+    <Button
+        android:id="@+id/delete_button"
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="21dp"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
